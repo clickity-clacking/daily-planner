@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead">"Date"</p>
+    </header>
+    <div class="container">
+
+      <div class="row time-block" id="0">
+        <div class="col-2 hour" data-pair="0">
+          <h3 class="times">08:00</h3>
+        </div>
+        <input type="text" class="col-8" data-pair="0"></input>
+        <div class="col-2 before">
+          <button class ="row saveBtn" id="0">save</button>
+        </div>
+      </div> 
+
+      <div class="row time-block" id="1">
+        <div class="col-2 hour" data-pair="1">
+          <h3 class="times">09:00</h3>
+        </div>
+        <input type="text" class="col-8" data-pair="1"></input>
+        <div class="col-2 before">
+          <button class ="row saveBtn" id="btn1">save</button>
+        </div>
+      </div> 
+
+      <div class="row time-block" id="2">
+        <div class="col-2 hour" data-pair="2">
+          <h3 class="times">10:00</h3>
+        </div>
+        <input type="text" class="col-8" data-pair="2"></input>
+        <div class="col-2 before">
+          <button class ="row saveBtn" id="btn2">save</button>
+        </div>
+      </div> 
+
+      <div class="row time-block" id="3">
+        <div class="col-2 hour" data-pair="3">
+          <h3 class="times">11:00</h3>
+        </div>
+        <input type="text" class="col-8" data-pair="3"></input>
+        <div class="col-2 before">
+          <button class ="row saveBtn" id="btn3">save</button>
+        </div>
+      </div> 
+
+      <div class="row time-block" id="4">
+        <div class="col-2 hour" data-pair="4">
+          <h3 class="times">12:00</h3>
+        </div>
+        <input type="text" class="col-8" data-pair="4"></input>
+        <div class="col-2 before">
+          <button class ="row saveBtn" id="btn4">save</button>
+        </div>
+      </div> 
+
+      <div class="row time-block" id="5">
+        <div class="col-2 hour" data-pair="5">
+          <h3 class="times">13:00</h3>
+        </div>
+        <input type="text" class="col-8" data-pair="5"></input>
+        <div class="col-2 before">
+          <button class ="row saveBtn" id="btn5">save</button>
+        </div>
+      </div> 
+
+      <div class="row time-block" id="6">
+        <div class="col-2 hour" data-pair="6">
+          <h3 class="times">14:00</h3>
+        </div>
+        <input type="text" class="col-8" data-pair="6"></input>
+        <div class="col-2 before">
+          <button class ="row saveBtn" id="btn6">save</button>
+        </div>
+      </div>
+
+      <div class="row time-block" id="7">
+        <div class="col-2 hour" data-pair="7">
+          <h3 class="times">15:00</h3>
+        </div>
+        <input type="text" class="col-8" data-pair="7"></input>
+        <div class="col-2 before">
+          <button class ="row saveBtn" id="btn7">save</button>
+        </div>
+      </div> 
+
+      <div class="row time-block" id="8">
+        <div class="col-2 hour" data-pair="8">
+          <h3 class="times">16:00</h3>
+        </div>
+        <input type="text" class="col-8" data-pair="8"></input>
+        <div class="col-2 before">
+          <button class ="row saveBtn" id="btn8">save</button>
+        </div>
+      </div> 
+
+      <div class="row time-block" id="9">
+        <div class="col-2 hour" data-pair="9">
+          <h3 class="times">17:00</h3>
+        </div>
+        <input type="text" class="col-8" data-pair="9"></input>
+        <div class="col-2 before">
+          <button class ="row saveBtn" id="btn9">save</button>
+        </div>
+      </div> 
+
+    </div> 
+
+
+    </div>   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- json -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-json/2.6.0/jquery.json.min.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
